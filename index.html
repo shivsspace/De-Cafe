@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Café</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to De Café</h1>
+        <p>Your favorite place for coffee and pastries!</p>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>  <!--list-->
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="images/coffeee.jpg" alt="Coffee" class="menu-image">
+            <h3>Coffee</h3>
+            <p>Rich and aromatic coffee brewed to perfection.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/pastryy.jpg" alt="Pastries" class="menu-image">
+            <h3>Pastries</h3>
+            <p>Freshly baked pastries to accompany your drink.</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/sandwich.jpg" alt="Sandwiches" class="menu-image">
+            <h3>Sandwiches</h3>
+            <p>Delicious sandwiches made with fresh ingredients.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm"> <!--from this id the js file will take the resp. fields and also its used
+            to collect a user input and send it to a server-->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br><br> <!--textarea for multiline input such as a message-->
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>2024 De Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
